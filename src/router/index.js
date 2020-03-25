@@ -20,7 +20,11 @@ export default new Router({
                   path: '/home',
                   name: 'home',
                   component: () => import('@/pages/front/classify.vue')
-              },
+              },{
+                path: '/photo',
+                name: 'photo',
+                component: () => import('@/pages/front/photo.vue')
+            },
 
           ]
       },
