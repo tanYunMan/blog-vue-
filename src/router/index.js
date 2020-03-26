@@ -13,7 +13,7 @@ export default new Router({
               //默认没参数的跳转
               {
                   path: '/',
-                  redirect: '/home'
+                  redirect: '/login'
               },
               //首页
               {
@@ -24,6 +24,14 @@ export default new Router({
                 path: '/photo',
                 name: 'photo',
                 component: () => import('@/pages/front/photo.vue')
+            },{
+                path: '/login',
+                name: 'login',
+                component: () => import('@/pages/front/login.vue')
+            },{
+                path: '/views',
+                name: 'views',
+                component: () => import('@/pages/front/views.vue')
             },
 
           ]
