@@ -32,6 +32,14 @@ export default new Router({
                 path: '/views',
                 name: 'views',
                 component: () => import('@/pages/front/views.vue')
+            },{
+                path: '/advice',
+                name: 'advice',
+                component: () => import('@/pages/front/advice.vue')
+            },{
+                path: '/perMessage',
+                name: 'perMessage',
+                component: () => import('@/pages/front/perMessage.vue')
             },
 
           ]
